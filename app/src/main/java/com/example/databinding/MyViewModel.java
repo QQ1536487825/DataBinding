@@ -10,7 +10,7 @@ public class MyViewModel extends ViewModel {
     public MutableLiveData<Integer> getNumber() {
         if (number ==null){
             number = new MutableLiveData<>();
-            number.setValue(0);
+            number.setValue(10);
         }
         return number;
     }

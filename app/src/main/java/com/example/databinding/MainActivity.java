@@ -5,6 +5,7 @@ import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 
+
 import android.database.DatabaseUtils;
 import android.os.Bundle;
 
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
 
         myViewModel= ViewModelProviders.of(this).get(MyViewModel.class);
